@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: beige;
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: blueviolet;
+  text-transform: uppercase;
+  margin: 25px auto;
+  text-shadow: 5px 5px rgba(195, 131, 255, 0.356);
+}
+
+article {
+  margin: 25px auto;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.primer {
+  background-color: aqua;
+}
+
+.bg-gray {
+  border: 5px solid rgb(255, 0, 0);
+}
+
+.segundo {
+  background-color: rgb(246, 17, 197);
+  color: white;
+  padding-top: 10px;
+  /*da padding arriba por dentro del bloque*/
+  padding-right: 10px;
+  /* Da padding a la derecha dentro del bloque */
+  padding-bottom: 20px;
+  /* Da padding abajo dentro del  bloque*/
+  padding-left: 10px;
+  /* Da padding a la izquierda dentro del bloque */
+
+  /* Hacer n 1 sola linea recordar orden a la manesilla del reloj*/
+  padding: 10px 10px 20px 10px;
+  border: 3px solid rgb(0, 0, 0);
+  /* Todos los lados */
+  margin: 15px;
+  border-radius: 4px;
+  width: 150px;
+  height: 110px;
+  /* Cambia la caja de bloque a linea de bloque */
+  display: inline-block;
+}
+
+.tercero {
+  background-color: rgb(202, 119, 11);
+  color: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  border: 3px solid violet;
+  padding:10px 5px 15px 5px;
+  margin: 15px;
+      /* Cambia la caja de bloque a linea de bloque */
+  display: inline-block;
+  
+
+}

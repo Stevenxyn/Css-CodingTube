@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: content-box;
+  background-color: thistle;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+div,
+span {
+  padding-left: 5px;
+}
+
+.espacios {
+  background-color: red;
+  height: 20px;
+  text-align: center;
+}
+
+/*
+ Static : Posicionamiento de por defecto 
+  si es display en bloque va poniendo uno debajo del otro
+  si es display en linea va poniendo uno al lado del otro en la linea
+  
+  no permite modificaciones top left rigth boton
+*/
+
+.static {
+  position: static;
+  background-color: yellow;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* Position relative
+ si es display en bloque va poniendo uno debajo del otro
+  si es display en linea va poniendo uno al lado del otro en la linea
+
+ si se ponen mas elementos estos se iran acomodando como si esta misma caja no tuviera
+ ningun top left right bottom aplicado ya que relativamente aun permanece ahi
+
+ permite aplicar top, left, rigth, bottom
+
+ aplica el movimiento desde el origen en el que se encuentra
+
+*/
+
+.relative {
+  position: relative;
+  background-color: aqua;
+  width: 250px;
+  height: 100px;
+  top: 10px;
+  left: 250px;
+}
+
+/* 
+Position absolute
+se mueve con el contenedor y el div absolute esta dentro de body entonces se acomodo respecto
+a body pero siempre es respecto al contenedor en donde lo metamos
+
+
+
+*/
+
+.absolute{
+  background-color:cornflowerblue;
+  position: absolute;
+  top: 126px;
+  left: 250px;
+}
+
+/* 
+position sticky
+se adiere dependiendo el top quee le asignemos exelente para hacer barras
+de navegacion 
+
+Para que funcione se debe aderir 
+position: sticky;
+top: 20px;
+*/
+
+.sticky{
+  background-color:indigo;
+  color: white;
+  position: sticky;
+  top: 20px;
+}
+
+/* 
+Pisicionamiento fixed
+igual que el absolute y se mantendra fija en la posicion dentro del flujo se mantendra
+fijo
+exelente para colocar por ejemplo botones a los lados de redes sociales y siempre esten
+visibles 
+*/
+
+.fixed{
+  background-color:rgb(96, 240, 52);
+  position: fixed;
+  bottom: 0;
+ width: 100%;
+}
+

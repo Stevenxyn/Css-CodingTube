@@ -1,0 +1,34 @@
+.contenedor {
+  font-size: 32px;
+}
+
+.pixeles {
+  /*¨16px Valor por defecto*/
+  font-size: 36px;
+  background-color: aqua;
+  /* Ocupa solo 700px y no se modifica mediante la mediad de la pantalla */
+  width: 700px;
+}
+
+.porcentajes {
+  /*100% es el valor contenedor si se setea diferente el contenedor el porcentaje puede que lo duplique dependiendo si ponemos las del 100%*/
+  font-size: 200%;
+  background-color: aqua;
+  /* Se va modificando mediante la mediad de la pantalla */
+  width: 70%;
+
+}
+
+.em {
+  /* 1em = valor del contenedor */
+  font-size: 1em;
+  background-color: aqua;
+  width: 1em;
+}
+
+.rem {
+  /* 1rem equivale a el valor root = 16px */
+  font-size: 1rem;
+  background-color: aqua;
+  width: 1rem;
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(182, 180, 180);
+}
+
+/* ----------------------------Manu principal--------------------------- */
+.menu {
+  background-color: black;
+  font-size: 25px;
+  display: inline-flex;
+  width: 100%;
+  margin: 10px 0;
+ justify-content: center;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.menu a:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+/* Para cuando vaya bajando de seccion y quede activo el hover en el menu */
+.menu a.active {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+
+/* -------------------------------Redes sociales------------------------------ */
+
+.social {
+  margin: 30px 0;
+}
+
+.social a {
+  padding: 0 10px;
+  color: white;
+}
+
+.social a:hover {
+  color: black;
+  transition: 1s;
+}
+
+/* -------------------------------Boton suscribete------------------------------ */
+.boton a {
+  background-color: red;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.boton a:hover {
+  color: red;
+  background-color: white;
+  transition: 1s ease-in-out;
+}
