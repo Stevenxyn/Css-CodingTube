@@ -1,0 +1,86 @@
+img{
+    width: 100%;
+}
+
+
+/*********************Explicacion HTML****************** */
+body{
+    background-color: rgb(183, 208, 255);
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* Para dar profundidad */
+    perspective: 800px;
+}
+
+.cajaAtras{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-color: rgb(151, 23, 23);
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+
+.cajaAdelante{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-color:white;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 10px 15px 0 gray;
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 2;
+
+    transition-duration: 350ms;
+    animation-timing-function: ease-in;
+
+    /* Por defecto se aplican los transform desde el centro para cambiarlo es asi */
+/*     transform-origin: center left ;
+ */}
+
+.cajaAdelante:hover{
+/* 2D */
+    /* Primer mueve a la X segundo mueve en Y */
+/*     transform: translate(100px, 200px);
+ */
+
+/* permite girar, si esta en positivo gira a las manecillas del reloj */
+  /*  transform: rotate(50deg);
+   transform: rotate(-50deg ); */
+
+   /* tamaño en doble pone 2 y dependiendo en que eje lo queremos X o Y */
+/*     transform: scalex(2);
+    transform: scaley(2);
+    transform: scale(2, 2); */
+
+
+    /*igual que transform rotate  */
+/*     transform: skew(45deg);*/
+
+    /* Union de todos el orden es scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()*/
+    /* transform: matrix(1,0.5,0.5,1,100,50); */
+
+    /* 3D */
+    transform: rotateX(180deg);
+    transform: rotateZ(180deg);
+    transform: rotateY(180deg);
+
+
+}
+
+
